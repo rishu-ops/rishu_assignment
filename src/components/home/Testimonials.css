@@ -1,0 +1,122 @@
+.testimonials-section {
+  padding: var(--section-padding-y) 0;
+  background: white;
+}
+
+.testimonials-header {
+  text-align: center;
+  color: #fc238b;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.testimonials-title {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: var(--gap-section);
+  color: #1a1a1a;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-lg);
+  margin-bottom: var(--gap-section);
+}
+
+.testimonial-card {
+  background: #dbebfe33;
+  padding: 32px;
+  border-radius: 32px 0 32px 0;
+  text-align: center;
+  border: 2px solid #0000001a;
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.testimonial-name {
+  font-size: 18px;
+  color: #1a1a1a;
+  line-height: 40px;
+}
+
+.testimonial-role {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.star {
+  color: #ddd;
+  font-size: 30px;
+}
+
+.star.filled {
+  color: #ffd700;
+}
+
+.testimonial-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+}
+
+.testimonials-dots {
+  display: flex;
+  gap: var(--gap-sm);
+  justify-content: center;
+  margin-top: var(--gap-md);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  padding: 0;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #ff6b35;
+}
+
+.testimonials-carousel {
+  overflow: hidden;
+}
+.testimonials-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+.testimonial-slide {
+  min-width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+/* At larger screens, show 3 per view by shrinking slide width */
+@media (min-width: 992px) {
+  .testimonial-slide {
+    min-width: 33.3333%;
+  }
+}
+
+/* Remove old grid on mobile in favor of carousel */
+@media (max-width: 991px) {
+  .testimonials-grid {
+    display: none;
+  }
+}
+
+@media (max-width: 968px) {
+  .testimonials-title {
+    font-size: 32px;
+  }
+}

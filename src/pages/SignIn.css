@@ -1,0 +1,147 @@
+.signin {
+  padding: 40px 0;
+}
+
+.signin-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 32px 20px;
+}
+
+.signin-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.signin-illustration img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.signin-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.signin-title .accent {
+  color: #1d71e3;
+}
+.signin-subtitle {
+  color: #556;
+  margin-bottom: 20px;
+}
+
+.fi {
+  display: block;
+  margin-bottom: 18px;
+}
+.fi-label {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #334;
+}
+.fi-wrap {
+  position: relative;
+}
+.fi-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+}
+.fi input {
+  width: 100%;
+  padding: 14px 12px 14px 40px;
+  border: 1px solid #cfd6e4;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+}
+.fi input:focus {
+  border-color: #1d71e3;
+  box-shadow: 0 0 0 3px rgba(29, 113, 227, 0.12);
+}
+.fi-error {
+  margin-top: 6px;
+  color: #d93025;
+  font-size: 13px;
+}
+
+.signin-actions {
+  text-align: right;
+  margin: 6px 0 14px;
+}
+.forgot {
+  color: #556;
+  font-size: 14px;
+}
+
+.signin-btn {
+  width: 100%;
+  background: #1d71e3;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 16px;
+}
+.signin-btn:hover {
+  background: #2e4db8;
+}
+
+@media (max-width: 992px) {
+  .signin-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .signin-illustration {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .signin {
+    padding: 20px 0;
+  }
+
+  .signin-card {
+    padding: 24px 16px;
+  }
+
+  .signin-title {
+    font-size: 28px;
+  }
+
+  .signin-subtitle {
+    font-size: 14px;
+  }
+
+  .signin-illustration {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .signin-card {
+    padding: 20px 12px;
+    border-radius: 16px;
+  }
+
+  .signin-title {
+    font-size: 24px;
+  }
+
+  .fi input {
+    padding: 12px 12px 12px 40px;
+    font-size: 14px;
+  }
+
+  .signin-btn {
+    padding: 12px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,150 @@
+/* CSS Variables */
+:root {
+  --color-primary: #000000;
+  --color-secondary: #ff6a10;
+  --button-primary-bg: #ff6a10;
+  --button-secondary-bg: #1d71e3;
+  --container-padding-x: 20px;
+  --section-padding-y: 70px;
+  --button-padding: 14px 32px;
+
+  /* --- TYPOGRAPHY --- */
+  --font-primary: "Poppins", sans-serif;
+
+  /* breakpoints */
+  --bp-sm: 576px;
+  --bp-md: 768px;
+  --bp-lg: 992px;
+  --bp-xl: 1200px;
+
+  /* gaps */
+  --gap-section: 60px;
+  --gap-lg: 32px;
+  --gap-md: 20px;
+  --gap-sm: 8px;
+
+  /* line-heights */
+  --lh-body: 1.55;
+  --lh-heading: 1.25;
+}
+
+@media (max-width: 992px) {
+  :root {
+    --container-padding-x: 16px;
+    --section-padding-y: 64px;
+    --gap-section: 40px;
+    --gap-lg: 24px;
+    --gap-md: 14px;
+    --gap-sm: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --container-padding-x: 14px;
+    --section-padding-y: 56px;
+    --gap-section: 28px;
+    --gap-lg: 20px;
+    --gap-md: 12px;
+    --gap-sm: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --container-padding-x: 12px;
+    --section-padding-y: 48px;
+    --gap-section: 20px;
+    --gap-lg: 16px;
+    --gap-md: 10px;
+    --gap-sm: 6px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-primary);
+  line-height: var(--lh-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: var(--lh-heading);
+}
+
+.heading {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.sub-heading {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 34px;
+  }
+  .sub-heading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 28px;
+  }
+  .sub-heading {
+    font-size: 24px;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding-x);
+}
+
+.section {
+  padding: var(--section-padding-y) 0;
+}
