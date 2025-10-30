@@ -1,0 +1,33 @@
+.dark-theme {
+  --color-primary: #ffffff;
+  --color-secondary: #ff6a10;
+  --button-primary-bg: #ff6a10;
+  --button-secondary-bg: #1d71e3;
+  --background-primary: #1a1a1a;
+  --background-secondary: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+}
+
+body {
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header {
+  background: var(--background-primary);
+}
+
+.nav-link {
+  color: var(--text-secondary);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-secondary);
+}
+
+.search-btn {
+  color: var(--text-secondary);
+}

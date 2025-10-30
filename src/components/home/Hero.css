@@ -1,7 +1,6 @@
 .hero {
   padding: calc(var(--section-padding-y) / 1.3) 0 var(--section-padding-y);
   text-align: center;
-  background: white;
 }
 
 .hero-title {

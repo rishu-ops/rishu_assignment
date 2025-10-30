@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { useTheme } from "../../context/ThemeContext";
 import "./Header.css";
 
 const navLinks = [
@@ -16,6 +17,7 @@ const Header = () => {
   const [activeSection, setActiveSection] = useState("#home");
   const navigate = useNavigate();
   const searchRef = useRef(null);
+  const { theme, toggleTheme: onThemeToggle } = useTheme();
 
   const handleNavigate = (path) => {
     setOpen(false);
@@ -96,6 +98,19 @@ const Header = () => {
 
         {/* Actions */}
         <div className="header-actions" ref={searchRef}>
+          {/* Theme Toggle Button */}
+          <button
+            className="theme-toggle"
+            onClick={onThemeToggle}
+            aria-label={
+              theme === "dark"
+                ? "Switch to light theme"
+                : "Switch to dark theme"
+            }
+          >
+            {theme === "dark" ? "🌞" : "🌙"}
+          </button>
+
           {/* Search Button */}
           <div className={`search-wrapper ${showSearch ? "active" : ""}`}>
             <button
