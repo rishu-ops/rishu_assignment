@@ -1,17 +1,36 @@
+/* Light Theme (Default) */
 :root {
   --bg-primary: #ffffff;
-  --text-primary: #000000;
   --bg-secondary: #f5f5f5;
+  --text-primary: #000000;
+  --text-secondary: #666666;
+  --accent: #ff6a10;
+  --button-primary-bg: #ff6a10;
+  --button-secondary-bg: #1d71e3;
+  --color-secondary: #ff6a10;
 }
 
+/* Dark Theme */
 .dark-theme {
   --bg-primary: #1a1a1a;
-  --text-primary: #ffffff;
   --bg-secondary: #2d2d2d;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --accent: #ff6a10;
+  --button-primary-bg: #ff6a10;
+  --button-secondary-bg: #1d71e3;
 }
 
 body {
   background-color: var(--bg-primary);
-  color: var(--text-primary);
+  color: var(--color-primary);
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header {
+  background: var(--bg-primary);
+}
+
+.nav-link {
+  color: var(--text-secondary);
 }

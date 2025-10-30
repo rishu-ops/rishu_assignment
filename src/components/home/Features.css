@@ -54,7 +54,8 @@
 
 .feature-description {
   font-size: 14px;
-  color: #666;
+  color: var(--text-secondary);
+
   line-height: 1.6;
   font-weight: 500;
 }

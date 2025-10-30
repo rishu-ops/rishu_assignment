@@ -7,7 +7,7 @@ import NotFound from "./pages/NotFound";
 import useScrollReveal from "./hooks/use-scroll-reveal.tsx";
 import { ThemeProvider } from "./context/ThemeContext";
 import "./styles/theme-overrides.css";
-
+import "./styles/theme.css";
 const queryClient = new QueryClient();
 
 const App = () => {

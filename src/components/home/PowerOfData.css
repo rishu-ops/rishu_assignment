@@ -19,7 +19,8 @@
 }
 
 .power-text {
-  color: #666;
+  color: var(--text-secondary);
+
   font-size: 15px;
   line-height: 1.8;
   margin-bottom: 32px;

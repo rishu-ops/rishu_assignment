@@ -76,9 +76,9 @@ const Header = () => {
       <div className="header-container">
         {/* Logo */}
         <div className="logo">
-          <Link to="/">
+          <a href="/">
             <img src="/favicon.ico" alt="Zyvo Logo" />
-          </Link>
+          </a>
         </div>
 
         {/* Desktop Nav */}

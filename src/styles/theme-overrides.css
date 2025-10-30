@@ -11,21 +11,12 @@
 
 body {
   background-color: var(--background-primary);
-  color: var(--text-primary);
+  /* color: var(--text-primary); */
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .header {
   background: var(--background-primary);
-}
-
-.nav-link {
-  color: var(--text-secondary);
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: var(--color-secondary);
 }
 
 .search-btn {
